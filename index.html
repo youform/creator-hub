@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook-Style Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f2f2f7, #e5e5ea);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .login-container {
+            width: 90%;
+            max-width: 400px;
+            background: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container img {
+            width: 70px;
+            margin-bottom: 20px;
+        }
+
+        .login-container h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1c1c1e;
+            margin-bottom: 20px;
+        }
+
+        .login-container p {
+            font-size: 0.9rem;
+            color: #636366;
+            margin-bottom: 30px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            border: 1px solid #d1d1d6;
+            border-radius: 8px;
+            background: #f9f9fa;
+            color: #1c1c1e;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .login-container input:focus {
+            border-color: #007aff;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: white;
+            background: #007aff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-container button:hover {
+            background: #0056d6;
+        }
+
+        .login-container .link {
+            display: block;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #007aff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .login-container .link:hover {
+            color: #0056d6;
+        }
+
+        .macbook-border {
+            width: 100%;
+            max-width: 1000px;
+            height: 600px;
+            border: 5px solid #d1d1d6;
+            border-radius: 30px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f2f2f7;
+        }
+
+        .camera {
+            width: 12px;
+            height: 12px;
+            background: #d1d1d6;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="macbook-border">
+        <div class="camera"></div>
+        <div class="login-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo">
+            <h1>Sign In</h1>
+            <p>Use your Apple ID to sign in</p>
+            <form>
+                <input type="text" placeholder="Apple ID">
+                <input type="password" placeholder="Password">
+                <button type="submit">Sign In</button>
+            </form>
+            <a href="#" class="link">Forgot Apple ID or password?</a>
+        </div>
+    </div>
+</body>
+</html>
